@@ -68,12 +68,12 @@ Welcome to my first backend app, LIRI Bot. LIRI is like iPhone's SIRI. However, 
 * API calls
 
 ## npm packages: 
-* [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api) - A simple to use API library for the Spotify REST API.
+* [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api) - Spotify REST API library to obtain information about a song. :musical_note:
 * [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js.
-* [OMDB API](http://www.omdbapi.com) -A node.js and browser client for OMDb API to obtain movie information.
-* [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api) - API allows any app to display the information on local concerts and live music recommendations.
-* [Moment](https://www.npmjs.com/package/moment) - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
-* [DotEnv](https://www.npmjs.com/package/dotenv) - Dotenv store your sensitive credentials and load in environment variables in .env file to merge into your process.env runtime variables.
+* [OMDB API](http://www.omdbapi.com) -A node.js and browser client for OMDb API to obtain movie information. :movie_camera:
+* [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api) - API allows any app to display the information on local concerts and live music recommendations. :guitar: :drum:
+* [Moment](https://www.npmjs.com/package/moment) - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates. :calendar:
+* [DotEnv](https://www.npmjs.com/package/dotenv) - Dotenv store your sensitive credentials and load in environment variables in .env file to merge into your process.env runtime variables. :closed_lock_with_key:
 
 
 ## Author
