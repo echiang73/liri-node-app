@@ -1,0 +1,29 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "LIRI Bot Node App",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echiang73/liri-node-app.git"
+  },
+  "keywords": [
+    "LIRI",
+    "Bandsintown",
+    "Spotify",
+    "OMDB"
+  ],
+  "author": "Eddie Chiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echiang73/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/echiang73/liri-node-app#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "node-spotify-api": "^1.0.7"
+  }
+}
