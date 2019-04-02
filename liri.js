@@ -18,9 +18,9 @@ switch (command) {
     case "movie-this":
         movieThis(userInput);
         break;
-    // case "do-what-it-says":
-    // doIt();
-    // break;
+    case "do-what-it-says":
+        doIt();
+        break;
     default:
         console.log("Try again and enter a command");
 };
@@ -31,14 +31,15 @@ function concertThis(userInput) {
         function (response) {
             // Then we print out the responses
             // console.log(response.data[0]);
-           for (var i=0; i<response.data.length; i++) {
-            // Name of the venue
-            console.log("Venue #" + [i+1] + ": " + response.data[i].venue.name);
-            // Venue location
-            console.log("Venue Location: " + response.data[i].venue.city + ", " + response.data[i].venue.region + ", " + response.data[i].venue.country);
-            // Date of the Event (use moment to format this as "MM/DD/YYYY")
-            console.log("Date: " + moment(response.data[i].datetime, "").format("MM/DD/YYYY"));
-           }
+            console.log("--------------- Bands In Town Info ---------------");
+            for (var i = 0; i < response.data.length; i++) {
+                // Name of the venue
+                console.log("Venue #" + [i + 1] + ": " + response.data[i].venue.name);
+                // Venue location
+                console.log("Venue Location: " + response.data[i].venue.city + ", " + response.data[i].venue.region + ", " + response.data[i].venue.country);
+                // Date of the Event (use moment to format this as "MM/DD/YYYY")
+                console.log("Date: " + moment(response.data[i].datetime, "").format("MM/DD/YYYY"));
+            }
         })
         .catch(function (error) {
             if (error.response) {
@@ -59,7 +60,6 @@ function concertThis(userInput) {
         });
 }
 
-
 function spotifyThis(userInput) {
     var spotify = new Spotify(keys.spotify);
     if (!userInput) {
@@ -73,6 +73,7 @@ function spotifyThis(userInput) {
         // console.log(data);
         var songInfo = data.tracks.items[0];
         // console.log(data.tracks.items[0]);
+        console.log("--------------- Spotify Song Info ---------------");
         console.log("Artist(s): " + songInfo.artists[0].name);
         console.log("Song Name: " + songInfo.name);
         console.log("Preview Link: " + songInfo.preview_url);
@@ -92,6 +93,7 @@ function movieThis(userInput) {
         function (response) {
             // Then we print out the imdbRating
             // console.log(response.data);
+            console.log("--------------- OMDB Movie Info ---------------");
             console.log("Title: " + response.data.Title);
             console.log("Release Year: " + response.data.Year);
             console.log("IMDB Rating: " + response.data.imdbRating);
@@ -119,3 +121,27 @@ function movieThis(userInput) {
             console.log(error.config);
         });
 }
+
+function doIt(userInput) {
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        if (error) {
+            return console.log(error);
+        }
+        // Then split it by commas (to make it more readable)
+        var dataArr = data.split(",");
+        // console.log(data);
+        // console.log(dataArr);
+        // console.log(dataArr[1].slice(1));
+        userInput = dataArr[1].slice(1);
+
+        if (dataArr[0] === "concert-this") {
+            concertThis(userInput);
+        }
+        else if (dataArr[0] === "spotify-this-song") {
+            spotifyThis(userInput);
+        }
+        else if (dataArr[0] === "movie-this") {
+            movieThis(userInput);
+        }
+    });
+};
