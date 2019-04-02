@@ -85,5 +85,5 @@ https://github.com/echiang73/liri-node-app
 
 ## Here is the preview of the node application:
 
-![](assets/images/webpreview.gif "gif")
+![](nodepreview.gif "gif")
 
