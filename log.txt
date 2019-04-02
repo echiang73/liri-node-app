@@ -1,39 +1,42 @@
 
 User Command: node liri.js concert-this rolling stones
 --------------- Bands In Town Info ---------------
-Venue #3: NRG Arena
-Venue Location: Houston, TX, United States
-Date: 04/28/2019
-Venue #4: Fairgrounds New Orleans
-Venue Location: New Orleans, LA, United States
-Date: 05/02/2019
-Venue #5: State Farm Stadium
-Venue Location: Glendale, AZ, United States
-Date: 05/07/2019
-Venue #7: Levi's Stadium
-Venue Location: Santa Clara, CA, United States
-Date: 05/18/2019
-Venue #8: CenturyLink Field
-Venue Location: Seattle, WA, United States
-Date: 05/22/2019
-Venue #9: Broncos Stadium at Mile High
-Venue Location: Denver, CO, United States
-Date: 05/26/2019
-Venue #2: TIAA Bank Field
-Venue Location: Jacksonville, FL, United States
-Date: 04/24/2019
 Venue #1: Hard Rock Stadium
 Venue Location: Miami Gardens, FL, United States
 Date: 04/20/2019
+Venue #2: TIAA Bank Field
+Venue Location: Jacksonville, FL, United States
+Date: 04/24/2019
+Venue #3: NRG Arena
+Venue Location: Houston, TX, United States
+Date: 04/28/2019
+Venue #5: State Farm Stadium
+Venue Location: Glendale, AZ, United States
+Date: 05/07/2019
+Venue #4: Fairgrounds New Orleans
+Venue Location: New Orleans, LA, United States
+Date: 05/02/2019
+Venue #6: Rose Bowl Stadium
+Venue Location: Pasadena, CA, United States
+Date: 05/11/2019
+Venue #7: Levi's Stadium
+Venue Location: Santa Clara, CA, United States
+Date: 05/18/2019
+Venue #9: Broncos Stadium at Mile High
+Venue Location: Denver, CO, United States
+Date: 05/26/2019
+Venue #8: CenturyLink Field
+Venue Location: Seattle, WA, United States
+Date: 05/22/2019
+Venue #10: FedEx Field
+Venue Location: Landover, MD, United States
+Date: 05/31/2019
+Venue #11: Lincoln Financial Field
+Venue Location: Philadelphia, PA, United States
+Date: 06/04/2019
 Venue #12: Gillette Stadium
 Venue Location: Foxborough, MA, United States
 Date: 06/08/2019
-Venue #13: MetLife Stadium
-Venue Location: East Rutherford, NJ, United States
-Date: 06/13/2019
-Venue #14: MetLife Stadium
-Venue Location: East Rutherford, NJ, United States
-Date: 06/17/2019
 Venue #15: Soldier Field
 Venue Location: Chicago, IL, United States
 Date: 06/21/2019
@@ -43,15 +46,19 @@ Date: 06/25/2019
 Venue #17: Burl's Creek Event Grounds
 Venue Location: Oro-medonte, , Canada
 Date: 06/29/2019
-Venue #11: Lincoln Financial Field
-Venue Location: Philadelphia, PA, United States
-Date: 06/04/2019
-Venue #6: Rose Bowl Stadium
-Venue Location: Pasadena, CA, United States
-Date: 05/11/2019
-Venue #10: FedEx Field
-Venue Location: Landover, MD, United States
-Date: 05/31/2019
+Venue #14: MetLife Stadium
+Venue Location: East Rutherford, NJ, United States
+Date: 06/17/2019
+Venue #13: MetLife Stadium
+Venue Location: East Rutherford, NJ, United States
+Date: 06/13/2019
+
+User Command: node liri.js spotify-this-song 
+--------------- Spotify Song Info ---------------
+Artist(s): Ace of Base
+Song Name: The Sign
+Preview Link: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=fe78c4f4d02242dc846dfb9f002d450c
+Album: The Sign (US Album) [Remastered]
 
 User Command: node liri.js spotify-this-song we are the champions
 --------------- Spotify Song Info ---------------
@@ -59,17 +66,6 @@ Artist(s): Queen
 Song Name: We Are The Champions - Remastered 2011
 Preview Link: null
 Album: News Of The World (Deluxe Remastered Version)
-
-User Command: node liri.js movie-this matrix reloaded
---------------- OMDB Movie Info ---------------
-Title: The Matrix Reloaded
-Release Year: 2003
-IMDB Rating: 7.2
-Rotten Tomatoes Rating: 73%
-Country: USA
-Language: English, French
-Plot: Following the events of The Matrix (1999), Neo and the rebel leaders estimate they have 72 hours until 250,000 probes discover Zion and destroy it and its inhabitants. Neo must decide how he can save Trinity from a dark fate in his dreams.
-Actors: Ray Anthony, Christine Anu, Andy Arness, Alima Ashton-Sheibu
 
 User Command: node liri.js movie-this 
 If you haven't watched Mr. Nobody, then you should: <http://www.imdb.com/title/tt0485947/>
@@ -84,12 +80,16 @@ Language: English, Mohawk
 Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 
-User Command: node liri.js spotify-this-song 
---------------- Spotify Song Info ---------------
-Artist(s): Ace of Base
-Song Name: The Sign
-Preview Link: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=fe78c4f4d02242dc846dfb9f002d450c
-Album: The Sign (US Album) [Remastered]
+User Command: node liri.js movie-this matrix reloaded
+--------------- OMDB Movie Info ---------------
+Title: The Matrix Reloaded
+Release Year: 2003
+IMDB Rating: 7.2
+Rotten Tomatoes Rating: 73%
+Country: USA
+Language: English, French
+Plot: Following the events of The Matrix (1999), Neo and the rebel leaders estimate they have 72 hours until 250,000 probes discover Zion and destroy it and its inhabitants. Neo must decide how he can save Trinity from a dark fate in his dreams.
+Actors: Ray Anthony, Christine Anu, Andy Arness, Alima Ashton-Sheibu
 
 User Command: node liri.js do-what-it-says 
 
