@@ -35,11 +35,10 @@ function concertThis(userInput) {
             // Name of the venue
             console.log("Venue #" + [i+1] + ": " + response.data[i].venue.name);
             // Venue location
-            console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.region + ", " + response.data[i].venue.country);
+            console.log("Venue Location: " + response.data[i].venue.city + ", " + response.data[i].venue.region + ", " + response.data[i].venue.country);
             // Date of the Event (use moment to format this as "MM/DD/YYYY")
+            console.log("Date: " + moment(response.data[i].datetime, "").format("MM/DD/YYYY"));
            }
-          
-            
         })
         .catch(function (error) {
             if (error.response) {
