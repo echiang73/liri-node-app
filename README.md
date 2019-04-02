@@ -27,6 +27,7 @@ Welcome to my first backend app, LIRI Bot. LIRI is like iPhone's SIRI. However, 
 
 2. Option 2: `node liri.js spotify-this-song '<song name here>'`
 
+    * Note that this feature will only work if you provide LIRI Bot with a Spotify Client ID and Secret in the `keys.js`.
     * This will search the Spotify API and render the following information about the song to the terminal/bash window: 
         ```
         * Artist(s) 
