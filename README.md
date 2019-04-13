@@ -7,7 +7,7 @@ Welcome to my first backend app, LIRI Bot. LIRI is like iPhone's SIRI. However, 
 ## How to Run LIRI-Bot:
 
 1. Clone down repository.
-2. Navigate to the root of your project and run `npm init` to install the required versions of third party npm packages as instructed in the `package.json` file.
+2. Navigate to the root of your project and run `npm install` to install the required versions of third party npm packages as instructed in the `package.json` file.
 3. Run command `node liri.js` with one of the commands below.
    * `concert-this`
    * `spotify-this-song`
